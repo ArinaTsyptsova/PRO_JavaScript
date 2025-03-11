@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.product {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.review {
+    margin-bottom: 10px;
+}
+
+.delete-btn {
+    float: right;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
