@@ -1,4 +1,3 @@
-// Инициализация хранилища отзывов
 let reviews = JSON.parse(localStorage.getItem('reviews') || '[]');
 
 // Функция для добавления отзыва
@@ -23,7 +22,7 @@ function addReview(e) {
     }
 }
 
-// Функция для отображения списка продуктов
+// Функция для списка продуктов
 function showProducts() {
     const productsList = document.getElementById('productsList');
     productsList.innerHTML = '';
@@ -37,7 +36,7 @@ function showProducts() {
     });
 }
 
-// Функция для отображения отзывов по конкретному продукту
+// Функция для отзывов по конкретному продукту
 function showReviewsForProduct(product) {
     const reviewsSection = document.getElementById('reviewsSection');
     reviewsSection.innerHTML = '';
@@ -68,8 +67,6 @@ function deleteReview(id) {
     alert('Отзыв удалён!');
 }
 
-// Назначение обработчика события для формы
 document.getElementById('reviewForm').addEventListener('submit', addReview);
 
-// Первоначальное отображение списка продуктов
 showProducts();
